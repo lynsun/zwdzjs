@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="植物大战僵尸,HTML5版植物大战僵尸,业界首款HTML5版植物大战僵尸,HTML5,plant vs zombie,canvas,Dream.js,Dream">
+<title>首款HTML5版植物大战僵尸-by lyn</title>
+<style type="text/css">
+	body{margin:0;padding:0;}
+	#loadinginfo{position:absolute;text-align:center;width:600px;height:30px;top:200px;left:400px;z-index:1000;}
+</style>
+</style>
+<script type="text/javascript" src="../js/seajs/sea.js"></script>
+</head>
+<body>
+<div id="loadinginfo">lyn的服务器正在为您努力的加载js，请稍后。。。</div>
+<div id="ctn" style="text-align:leftr;padding:10px 10px 10px 10px;">
+<canvas width="1000" height="600" id="can" style="border:none;"></canvas>
+<span id="gold" style="width:50px;height:25px;position:absolute;top:72px;left:22px;"></span>
+</div>
+<script type="text/javascript">
+    seajs.config({
+        base:'http://www.lynsun.com/demos/games/Dream/zwdzjs/JS',
+        alias:{
+        },
+        charset:'utf-8',
+        timeout:20000,
+        debug:1
+    });
+
+	seajs.use('zwdzjs',function(Game){
+		Game.run();
+	})
+</script>
+</body>
+</html>
+
